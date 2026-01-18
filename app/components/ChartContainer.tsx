@@ -18,8 +18,8 @@ export default function ChartContainer() {
   return (
     // <div className="relative">{candles.length > 0 && <ChartLayout candleData={candles} />}</div>
     <div className="flex flex-col w-full h-full">
-      <OptionPanel />
-      <div className="flex flex-col h-[calc(100vh-62px)] w-full">
+      {/* <OptionPanel /> */}
+      <div className="flex flex-col h-full w-full">
         <BackTest candleData={candles} />
       </div>
     </div>
