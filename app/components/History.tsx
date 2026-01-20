@@ -23,8 +23,10 @@ export default function History({ historyList }: { historyList: HistoryList }) {
     }, 100);
   }, [historyList]);
 
+  // if (historyList.length === 0) return <div>No data</div>;
+
   return (
-    <div className="flex flex-col w-full text-center text-xs md:text-sm h-full overflow-hidden">
+    <div className="flex flex-col w-full text-center overflow-hidden text-xs md:text-sm h-full flex-1">
       <div className="grid grid-cols-10">
         <div className="col-span-1 flex justify-center">Side</div>
         <div className="col-span-2">Open Price</div>

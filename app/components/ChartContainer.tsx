@@ -3,7 +3,7 @@
 import * as React from "react";
 import BackTest from "./BackTest";
 import { useCandles } from "../hooks/useCandles";
-import OptionPanel from "./OptionPanel";
+import StatusSummery from "./StatusSummary";
 
 export default function ChartContainer() {
   const { candles, isLoading, error, isSuccess } = useCandles(
@@ -18,10 +18,7 @@ export default function ChartContainer() {
   return (
     // <div className="relative">{candles.length > 0 && <ChartLayout candleData={candles} />}</div>
     <div className="flex flex-col w-full h-full">
-      {/* <OptionPanel /> */}
-      <div className="flex flex-col h-full w-full">
-        <BackTest candleData={candles} />
-      </div>
+      <BackTest candleData={candles} />
     </div>
   );
 }
