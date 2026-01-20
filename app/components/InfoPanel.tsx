@@ -136,7 +136,7 @@ export default function InfoPanel({
       </div>
 
       {/* 기존 통계 테이블 */}
-      <table className="w-full border-b border-gray-300 pb-2">
+      <table className="w-full border-b text-sm md:text-md border-gray-300 pb-2">
         <thead>
           <tr className="text-left">
             <th className="pb-2 font-semibold">Metric</th>

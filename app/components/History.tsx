@@ -62,8 +62,8 @@ export default function History({ historyList }: { historyList: HistoryList }) {
             </div>
             <div className="col-span-2">{item.openPrice}</div>
             <div className="col-span-2">{item.closePrice}</div>
-            <div className="col-span-2">{item.openTime}</div>
-            <div className="col-span-2">{item.closeTime}</div>
+            <div className="col-span-2">{item.openTime.split(" ").pop()}</div>
+            <div className="col-span-2">{item.closeTime.split(" ").pop()}</div>
             <div className="col-span-1 flex justify-end">
               {item.profit.toFixed(2)}%
             </div>
