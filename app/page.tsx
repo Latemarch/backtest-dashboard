@@ -4,9 +4,8 @@ import Footer from "./components/Footer";
 
 export default function page() {
   return (
-    <div className="p-4 h-full">
+    <div className="flex h-full">
       <ChartContainer />
-      {/* <Footer /> */}
     </div>
   );
 }

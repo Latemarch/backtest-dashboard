@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning>
         <div className="fixed inset-0 bg-bgPrimary"> </div>
-        <div className="relative z-10 max-w-screen-2xl mx-auto h-dvh text-white">
+        <div className="relative z-10 max-w-screen-2xl mx-auto h-dvh text-white flex flex-col">
           {children}
         </div>
       </body>

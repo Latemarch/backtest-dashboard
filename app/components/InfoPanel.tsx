@@ -123,14 +123,14 @@ export default function InfoPanel({
           </div>
         </div>
         <div className=" rounded-lg">
-          <div className="text-sm text-gray-400">Period Profit</div>
+          <div className="text-sm text-gray-400">Today's Profit</div>
           <div
             className={`text-lg font-semibold ${
               stats.totalProfitSum >= 0 ? "text-green-600" : "text-red-600"
             }`}
           >
-            {stats.totalProfitSum.toFixed(2)}% (
-            {stats.totalReturnSum.toFixed(2)}%)
+            {stats.totalProfitSum.toFixed(2)}% 
+            {/* ({stats.totalReturnSum.toFixed(2)}%) */}
           </div>
         </div>
       </div>
@@ -147,29 +147,29 @@ export default function InfoPanel({
         </thead>
         <tbody>
           <tr>
-            <td className="py-1 text-gray-700">Total Trades</td>
+            <td className="py-1 text-gray-400">Total Trades</td>
             <td className="py-1">{stats.total.trades}</td>
             <td className="py-1">{stats.long.trades}</td>
             <td className="py-1">{stats.short.trades}</td>
           </tr>
           <tr>
-            <td className="py-1 text-gray-700">Win Rate</td>
+            <td className="py-1 text-gray-400">Win Rate</td>
             <td className="py-1">{stats.total.winRate.toFixed(2)}%</td>
             <td className="py-1">{stats.long.winRate.toFixed(2)}%</td>
             <td className="py-1">{stats.short.winRate.toFixed(2)}%</td>
           </tr>
           <tr>
-            <td className="py-1 text-gray-700">Average Return</td>
+            <td className="py-1 text-gray-400">Average Return</td>
             <td className="py-1">{stats.total.mean.toFixed(2)}%</td>
             <td className="py-1">{stats.long.mean.toFixed(2)}%</td>
             <td className="py-1">{stats.short.mean.toFixed(2)}%</td>
           </tr>
-          <tr>
-            <td className="py-1 text-gray-700">Standard Deviation</td>
+          {/* <tr>
+            <td className="py-1 text-gray-400">Standard Deviation</td>
             <td className="py-1">{stats.total.std.toFixed(2)}%</td>
             <td className="py-1">{stats.long.std.toFixed(2)}%</td>
             <td className="py-1">{stats.short.std.toFixed(2)}%</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
     </div>

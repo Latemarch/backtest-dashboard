@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { HistoryList } from "../libs/backtest/history";
+import { CiBitcoin } from "react-icons/ci";
 
 export default function StatusSummary({
   historyList = [],
@@ -25,8 +26,8 @@ export default function StatusSummary({
 
   return (
     <div className="w-full px-2">
-      <div className="flex flex-row gap-2 mb-2 justify-end items-center">
-        <p className="text-sm">Server time</p>
+      <div className="flex gap-2 mb-2 justify-between items-center">
+        <CiBitcoin className="text-3xl text-yellow-500" />
         <p className="text-xs text-gray-400">{serverTime}</p>
       </div>
       <div className="flex flex-row gap-2 items-center">

@@ -10,6 +10,7 @@ import InfoPanel from "./InfoPanel";
 import { HistoryList, makeHistoryList } from "../libs/backtest/history";
 import { backtestV2 } from "../libs/v2/backtestV2";
 import StatusSummery from "./StatusSummary";
+import Footer from "./Footer";
 
 export default function BackTest({ candleData }: { candleData: BybitKline[] }) {
   

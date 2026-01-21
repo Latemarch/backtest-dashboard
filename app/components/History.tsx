@@ -29,10 +29,10 @@ export default function History({ historyList }: { historyList: HistoryList }) {
     <div className="flex flex-col w-full text-center overflow-hidden text-xs md:text-sm h-full flex-1">
       <div className="grid grid-cols-10">
         <div className="col-span-1 flex justify-center">Side</div>
-        <div className="col-span-2">Open Price</div>
-        <div className="col-span-2">Close Price</div>
-        <div className="col-span-2">Open Time</div>
-        <div className="col-span-2">Close Time</div>
+        <div className="col-span-2">OpenPrice</div>
+        <div className="col-span-2">ClosePrice</div>
+        <div className="col-span-2">OpenTime</div>
+        <div className="col-span-2">CloseTime</div>
         <div className="col-span-1 flex justify-end pr-1">Profit </div>
       </div>
       <div className="border border-gray-500"></div>
